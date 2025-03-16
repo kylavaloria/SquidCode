@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('assets/Background.png');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            font-family: 'Quicksand', sans-serif;
+            color: white; 
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6, b {
+            font-weight: 500;
+            color: white; 
+        }
+
+        p, label, a {
+            color: white;
+        }
+
+        input, select, textarea {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        button:hover {
+            background-color: #ddd; 
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        nav {
+            justify-self: end; 
+        }
+
+        nav ul {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 40px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            position: relative;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none !important;
+            border-bottom: none !important;
+        }
+
+        nav ul li::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 0%;
+            height: 2px; 
+            background-color: white; 
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav ul li:hover::after {
+            width: 100%;
+            filter: drop-shadow(0 0 8px #CEBFEE)
+        }
+
+        footer {
+            padding: 25px 50px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px; 
+            width: 100%;
+            max-width: 1400px; 
+            margin: 0 auto;
+            text-align: center;
+            align-items: start;
+        }
+
+        .logo-section {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            gap: 15px;
+            max-width: 400px;
+            position: relative;
+            
+        }
+
+        .logo-section h1 {
+            font-size: 32px;
+        }
+
+        .logo-section h1 span {
+            color: #ff2975;
+        }
+
+        .logo-section p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .sponsors-section {
+            width: 100%;
+            max-width: 400px; 
+            position: relative;
+            left: 30px; 
+        }
+
+        .sponsors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: left;
+            margin-top: 10px;
+            
+        }
+
+        .sponsors img {
+            max-height: 40px;
+        }
+
+        .socials-section {
+            width: 100%;
+            max-width: 350px; 
+            justify-self: end; 
+            margin-left: 0; 
+            text-align: left;
+        }
+
+        .social-icons {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            gap: 10px;
+            justify-content: start;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            transition: filter 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            cursor: pointer;
+            filter: drop-shadow(0 0 8px #CEBFEE)
+        }
+
+        .logo-section img {
+            margin-right: 15px;
+        }
+
+        .description {
+            font-size: 12px;
+            color: #ffffff;
+            max-width: 300px;
+        }
+
+            .left-section {
+            display: grid;
+            align-items: start;
+            gap: 20px;
+            max-width: 450px; 
+            padding-right: 0;
+        }
+
+        .right-section {
+            justify-self: center;
+            margin-left: 0;
+            position: relative;
+        }
+
+        .right-section::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: #564D6A;
+        }
+
+        .toc {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px; 
+        }
+
+        strong {
+            font-weight: 900;
+        }
+
+        .back-to-registration {
+            position: relative; /* Change from absolute to relative */
+        }
+
+        .back-to-registration a {
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            transition: all 0.2s ease;
+        }
+
+        .back-to-registration .arrow {
+            margin-right: 10px;
+            font-size: 20px;
+            transition: all 0.2s ease;
+        }
+
+        .back-to-registration a:hover {
+            text-decoration: underline;
+            
+            filter: drop-shadow(0 0 8px #CEBFEE)
+        }
+
+        .term{
+            margin-bottom: 40px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="logo" width="130">
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="registration-form.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="toc">
+        <div class="title">
+            <h1>Terms and Conditions</h1>
+            <p>By registering for and participating in the event, you agree to comply with the following. Please read them carefully.</p>
+        </div>
+
+        <div class="term">
+            <h3>I. Eligibility</h3>
+            <ul>
+                <li>Participants must be at least <strong>18 years old</strong>.</li>
+                <li>Registration is open to individuals worldwide, but participants must have a <strong>stable internet connection</strong> to join virtual events.</li>
+                <li>Organizers reserve the right to verify identity and eligibility before granting access to the competition.</li>
+            </ul>
+        </div>
+
+        <div class="term">
+            <h3>II. Registration and Account Security</h3>
+            <ul>
+                <li>Participants must provide <strong>accurate</strong> and <strong>complete information</strong> during registration.</li>
+                <li>Sharing login credentials or allowing others to use your account is strictly prohibited.</li>
+                <li>Any attempt to <strong>register multiple accounts</strong> for unfair advantage will result in immediate disqualification.</li>
+            </ul> 
+        </div>
+
+        <div class="term">
+            <h3>III. Event Rules and Conduct</h3>
+            <ul>
+                <li>All participants must adhere to ethical coding practices and <strong>avoid plagiarism</strong>.</li>
+                <li><strong>AI-generated code is allowed</strong>, but participants must disclose its use where applicable.</li>
+                <li>Cheating, hacking, or any form of <strong>malicious activity</strong> will lead to immediate disqualification.</li>
+                <li>Participants must <strong>respect fellow contestants</strong>, mentors, and judges at all times. Harassment or inappropriate behavior will not be tolerated.</li>
+            </ul> 
+        </div>
+
+        <div class="term">
+            <h3>IV. Intellectual Property</h3>
+            <ul>
+                <li>Participants retain ownership of their code and solutions but grant <strong>Squid Code organizers the right to showcase their work</strong> for promotional or educational purposes.</li>
+                <li>Any third-party resources (e.g., open-source libraries) used must comply with respective licenses.</li>
+            </ul>
+        </div>
+        
+        <div class="term">
+            <h3>V. Data Privacy</h3>
+            <ul>
+                <li>The information collected during registration will only be used for <strong>event-related purposes</strong>.</li>
+                <li>Organizers will not sell or share personal data with third parties <strong>without consent</strong>.</li>
+            </ul>
+        </div>
+
+        <div class="term">
+            <h3>VI. Liability and Disclaimers</h3>
+            <ul>
+                <li>The organizers are not responsible for technical issues, internet outages, or <strong>unforeseen circumstances</strong> affecting participation.</li>
+                <li>Participants agree to join the event at their own risk.</li>
+            </ul>
+        </div>
+        
+        <div class="term">
+            <h3>VII. Modifications to Terms</h3>
+            <ul>
+                <li>Squid Code organizers reserve the right to update these terms at any time. Changes will be communicated via email or event announcements.</li>
+            </ul>
+        </div>
+        </main>
+
+    <footer>
+        <div class="footer-container">
+            <section class="left-section">
+                <div class="back-to-registration" align="left">
+                    <a href="registration-form.html">
+                        <img src="assets/arrow.png" alt="back" style="margin-right:10px;" width="15">Back to Registration
+                    </a>
+                </div>
+                <div class="logo-section">
+                    <img src="assets/logo.png" alt="Squid Code Logo" width="150">
+                    <p class="description" style="font-size: small;" align="left">
+                        Compete, solve challenges, and prove your programming skills in a high-stakes coding showdown. 
+                        Do you have what it takes to survive?
+                    </p>
+                </div>
+            </section>            
+            <section class="right-section">
+            <div class="sponsors-section">
+                <h3 align="left">Our Sponsors</h3>
+                <div class="sponsors">
+                    <img src="assets/Starbucks.png" alt="Starbucks" style="height: 15px; width: auto; margin-right: 10px;">
+                    <img src="assets/Sony.png" alt="Sony" style="height: 15px; width: auto;">
+                    <img src="assets/Dell Technologies.png" alt="Dell Technologies" style="height: 25px; width: auto; margin-right: 10px;">
+                    <img src="assets/Apple.png" alt="Apple" style="height: 20px; width: auto; margin-right: 10px;">
+                    <img src="assets/Netflix.png" alt="Netflix" style="height: 20px; width: auto; margin-right: 10px;">
+                    <img src="assets/Cisco.png" alt="Cisco" style="height: 20px; width: auto; margin-right: 10px;">
+                    <img src="assets/Google.png" alt="Google" style="height: 20px; width: auto; margin-right: 10px;">
+                </div>
+            </div>
+            </section>
+            <div class="socials-section">
+                <h3>Socials</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/github.png" alt="GitHub"></a>
+                    <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+                </div>
+                <p style="font-size: smaller;">&copy; 2025 Kyla Mae Valoria </p>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
